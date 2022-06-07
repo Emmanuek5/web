@@ -1,0 +1,1 @@
+const hellomessage = "Welcome To Fsg Work Solutions \n Select Your Services Below: \n 1) Agro Section\n 2) Hr Department \n 3)Online Shop"
