@@ -1,5 +1,5 @@
 const qrcode = require('qrcode-terminal');
-
+const api = require("./test")
 const fs = require('fs');
 const { Client, LocalAuth } = require('whatsapp-web.js');
 
@@ -27,8 +27,8 @@ client.on('ready', () => {
 });
 client.on('message', message => {
 	console.log(message.body)
-    if(message.body === '!ping') {
-		client.sendMessage(message.from, 'pong');
+    if(message.body === 'Hello') {
+		client.sendMessage(message.from, hellomessage);
 	}
 });
 
